@@ -198,6 +198,7 @@
     <TypeScriptModuleKind>amd</TypeScriptModuleKind>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+   <Target Name="BeforeBuild">
   <Target Name="BeforeBuild">
     <ItemGroup>
       <Content Include="src\bower_modules\**\*" />
